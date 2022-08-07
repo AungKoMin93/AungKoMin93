@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #2a2a2a;
+    }
+    .text{
+        font-size: 60px;
+        font-family: sans-serif;
+        -webkit-text-stroke: 0.5px #fff;
+        color: transparent;
+        font-weight: bolder;
+        position: relative;
+    }
+    .text::before{
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #fff;
+        -webkit-text-stroke: 0px transparent;
+        border-right: 2px solid #fff;
+        width: 0;
+        height: 100%;
+        overflow: hidden;
+        animation: myani 4s alternate 2;
+    }
+    @keyframes myani{
+        0%{
+            width: 0;
+        }
+        100%{
+             width: 100%;
+        }
+    }
+</style>
+<body>
+    <div class="text" data-text="Programming...">
+        Programming...
+    </div>
+</body>
+</html>
