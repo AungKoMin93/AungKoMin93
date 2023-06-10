@@ -1,0 +1,10 @@
+.review-text{
+    width: 75%;
+}
+
+
+@media (max-width: 990px) {
+    .review-text{
+        width: 100%;
+    }
+}

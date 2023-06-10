@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/university.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+<body>
+
+        <!-- navbar -->
+
+        <nav>
+            <div class="logo-box">
+                <img src="./assets/viber_image_2023-06-06_13-55-29-494.png" alt="logo">
+                <p>VitalScholar</p>
+            </div>
+            <div class="controls">
+                <ul>
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="university.html">Universities</a></li>
+                    <li class="nav-item"><a href="mentors.html">Mentors</a></li>
+                    <li class="nav-item"><a href="consult.html">Consultation</a></li>
+                    <li class="nav-item"><a href="about.html">About</a></li>
+                    <li class="nav-item"><a href="contact.html">Contact Us</a></li>
+                    <li class="search-box">
+                        <input type="text" placeholder="Search...">
+                    </li>
+                </ul>
+                <div class="toggle-btn-gp">
+                    <div class="search-btn">
+                        <i class="fas fa-search"></i>
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <div class="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="mini-search">
+                <input type="text" placeholder="Search">
+            </div>
+        </nav>
+    
+           <!-- navbar ends -->
+    
+    <section>
+        <div class="row m-auto d-flex" id="first_session">
+            
+            <div class="col-lg-6 col-sm-12 p-0 d-flex justify-content-center align-items-center" id="content">
+                <div class="overlay d-flex flex-column justify-content-center align-items-start p-lg-5 p-sm-3">
+                    <h2>THE DOOR FOR YOUR FUTURE IS WAITING, <br>
+                    UNLOCK IT!</h2>
+                    <p>Check out the profiles for each of these scholarships by clicking the Learn More Button.</p>
+                    <a href="" class="btn btn-success" style="width: 10rem;">Learn More</a>
+                </div>
+            </div>
+    
+            <div class="col-lg-6 col-sm-12 3 p-0 overflow-hidden d-flex align-items-center" style="height: 30rem;" id="image">
+                <img src="https://www.waseda.jp/top/en/assets/uploads/2020/04/oxford-1016541_1280.jpg" style="object-fit: cover;" alt="image">
+            </div>
+    
+        </div>
+    </section>
+
+    <section class="p-lg-5 p-sm-3">
+
+        <h3 class="mt-lg-5 mt-sm-3 mb-3">UNIVERSITIES OFFERS</h3>
+
+        <div class="row m-auto">
+
+            <div class="col-lg-3 col-sm-12">
+
+                <div class="card">
+
+                    <div class="card-body d-flex flex-column gap-3">
+
+                            <h4>Filter by</h4>
+                            <div class="fluid-container d-flex flex-lg-column gap-3">
+                                <select name="" id="country" class="form-control">
+                                    <option value="All">All Country</option>
+                                    <option value="United States">United States</option>
+                                    <option value="United Kingdom">United Kingdom</option>
+                                    <option value="Japan">Japan</option>
+                                </select>
+                                <select name="" id="university" class="form-control">
+                                    <option value="">All University</option>
+                                    <option value=""></option>
+                                </select>
+                                <select name="" id="major" class="form-control">
+                                    <option value="All">All Major</option>
+                                    <option value="Computer Science">Computer Science</option>
+                                    <option value="Architecture">Architecture</option>
+                                    <option value="Cyber Security">Cyber Security</option>
+                                </select>
+                                <select name="" id="scholar_type" class="form-control">
+                                    <option value="">All Scholarship Types</option>
+                                    <option value=""></option>
+                                </select>
+                                <button class="btn btn-success" id="filter-btn">Filter</button>
+                            </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-9 col-sm-12">
+
+                <div class="row m-auto" id="universities">
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    
+    <!-- footer -->
+
+    <footer>
+        <div class="row m-auto px-lg-5 px-sm-3">
+            <div class="col-lg-3 col-sm-12">
+                <form action="" method="Post" id="subscribe_form">
+                    <img src="./assets/viber_image_2023-06-06_13-55-29-494.png" alt="logo">
+                    <h4>Subscribe Now for More Exclusive Contents</h4>
+                    <input type="email" placeholder="Your Email" class="form-control">
+                    <input type="submit" class="btn btn-success border-0 text-dark" value="Subscribe">
+                </form>
+            </div>
+            <div class="col-lg-3 col-sm-6 py-lg-5 py-sm-3 px-lg-5 px-sm-3">
+                <h5>Information</h5>
+                <ul class="list-unstyled">
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">More Search</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Testimonials</a></li>
+                    <li><a href="">Events</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-sm-6 py-lg-5 py-sm-3 px-lg-5 px-sm-3">
+                <h5>Helpful Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Supports</a></li>
+                    <li><a href="">Terms & Conditions</a></li>
+                    <li><a href="">Privacy & Policy</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-sm-12 py-lg-5 py-sm-3 px-lg-5 px-sm-3">
+                <h5>Contact Us</h5>
+                <div class="contact_info">
+                    <div class="phone_info">
+                        <a href="" class="text-decoration-none text-dark"><i class="fas fa-phone"></i>+95 912345678</a>
+                    </div>
+                    <div class="email_info">
+                        <a href="www.gmail.com" class="text-decoration-none text-dark"><i class="fas fa-envelope"></i>vitalScholar@gmail.com</a>
+                    </div>
+                </div>
+                <div class="social_info">
+                    <div class="fb">
+                        <a href="www.facebook.com">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                    </div>
+                    <div class="yt">
+                        <a href="www.youtube.com">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                    <div class="insta">
+                        <a href="www.instagram.com">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="./js/script.js"></script>
+    <script src="./js/data-set.js"></script>
+    <script src="./js/university.js"></script>
+</body>
+</html>

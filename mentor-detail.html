@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Mentor Detail</title>
+
+	<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mentor-detail.css">
+</head>
+<body>
+<!-- navbar -->
+
+<nav>
+	<div class="logo-box">
+		<img src="./assets/viber_image_2023-06-06_13-55-29-494.png" alt="logo">
+		<p>VitalScholar</p>
+	</div>
+	<div class="controls">
+		<ul>
+			<li class="nav-item"><a href="index.html">Home</a></li>
+			<li class="nav-item"><a href="university.html">Universities</a></li>
+			<li class="nav-item"><a href="mentors.html">Mentors</a></li>
+			<li class="nav-item"><a href="consult.html">Consultation</a></li>
+			<li class="nav-item"><a href="about.html">About</a></li>
+			<li class="nav-item"><a href="contact.html">Contact Us</a></li>
+			<li class="search-box">
+				<input type="text" placeholder="Search...">
+			</li>
+		</ul>
+		<div class="toggle-btn-gp">
+			<div class="search-btn">
+				<i class="fas fa-search"></i>
+				<i class="fas fa-times"></i>
+			</div>
+			<div class="menu-toggle">
+				<i class="fas fa-bars"></i>
+				<i class="fas fa-times"></i>
+			</div>
+		</div>
+	</div>
+	<div class="mini-search">
+		<input type="text" placeholder="Search">
+	</div>
+</nav>			
+
+	<div class="container">
+	   <div class="row info">
+	   	   <div class="col-md-6">
+	   	   	   <div class="profile">
+	   	   	   	  <img src="https://avatars.githubusercontent.com/u/5399488?s=400&v=4">	   	   	   	  
+	   	   	   </div>
+	   	   </div>
+
+	   	   <div class="col-md-6 mt-4">
+	   	   	  <h3 class="mt-5" id="name"></h3>
+	   	   	  <p id="major">EIT International Excellence<p>
+	  
+	   	   	  <h4 class="mt-5">About Mentor</h4>
+	   	   	  <p class="text-justify" id="about">
+	   	   	  		
+	   	   	  </p>
+             
+	   	   	 <button type="button" class="btn btn-primary chatBtn" style="background-color: #fef540; color: black;">Start Consultation</button>	   	 
+	   	 </div>
+	   </div>
+
+	   <div class="row review mt-3 ">
+	   	  <h5 >Reviews & Rating</h5>
+	   	  <div class="col-md-2">   	
+	   	     <h3 class="mt-4 " style="font-weight: bold;">4.5</h3>
+	   	     <i class="fa-solid fa-star mt-2" style="color: #fef540;"></i>
+	   	     <i class="fa-solid fa-star mt-2" style="color: #fef540;"></i>
+	   	     <i class="fa-solid fa-star mt-2" style="color: #fef540;"></i>
+	   	     <i class="fa-solid fa-star mt-2" style="color: #fef540;"></i>
+	   	     <i class="fa-regular fa-star mt-2" style="color: #fef540;"></i>
+	   	     <p style="color: grey" class="mt-2 ">116 reviews</p>
+	   	     <div class="vl"></div>
+	   	  </div>
+	   	  
+	   	  <div class="col-md-3"> 
+	   	     <h3 class="mt-4 " style="font-weight: bold;">80%</h3>
+	   	     <p style="color: grey" class="mt-2 ">Recommened</p>
+	   	     <p style="color: grey">(100 out of 116)</p>
+	   	</div>
+
+	   	<div class=" d-grid gap-2 col-md-7 mx-auto">
+	   		<button class="btn btn-primary mt-3 reviewBtn" style="background-color: #fef540; color:black;" type="button">Write a review</button>
+            <button class="btn btn-primary reviewBtn" style="background-color: #fef540; color:black;" type="button">See all reviews</button>
+	   	</div>
+	   	
+	   </div>                    
+	</div>
+
+	<!-- footer  -->
+	<footer>
+		<div class="row m-auto px-lg-5 px-sm-3">
+			<div class="col-lg-3 col-sm-12">
+				<form action="" method="Post" id="subscribe_form">
+					<img src="./assets/viber_image_2023-06-06_13-55-29-494.png" alt="logo">
+					<h4>Subscribe Now for More Exclusive Contents</h4>
+					<input type="email" placeholder="Your Email" class="form-control">
+					<input type="submit" class="btn btn-success border-0 text-dark" value="Subscribe">
+				</form>
+			</div>
+			<div class="col-lg-3 col-sm-6 py-lg-5 py-sm-3 px-lg-5 px-sm-3">
+				<h5>Information</h5>
+				<ul class="list-unstyled">
+					<li><a href="">About Us</a></li>
+					<li><a href="">More Search</a></li>
+					<li><a href="">Blog</a></li>
+					<li><a href="">Testimonials</a></li>
+					<li><a href="">Events</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-3 col-sm-6 py-lg-5 py-sm-3 px-lg-5 px-sm-3">
+				<h5>Helpful Links</h5>
+				<ul class="list-unstyled">
+					<li><a href="">Services</a></li>
+					<li><a href="">Supports</a></li>
+					<li><a href="">Terms & Conditions</a></li>
+					<li><a href="">Privacy & Policy</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-3 col-sm-12 py-lg-5 py-sm-3 px-lg-5 px-sm-3">
+				<h5>Contact Us</h5>
+				<div class="contact_info">
+					<div class="phone_info">
+						<a href="" class="text-decoration-none text-dark"><i class="fas fa-phone"></i>+95 912345678</a>
+					</div>
+					<div class="email_info">
+						<a href="www.gmail.com" class="text-decoration-none text-dark"><i class="fas fa-envelope"></i>vitalScholar@gmail.com</a>
+					</div>
+				</div>
+				<div class="social_info">
+					<div class="fb">
+						<a href="www.facebook.com">
+							<i class="fab fa-facebook-square"></i>
+						</a>
+					</div>
+					<div class="yt">
+						<a href="www.youtube.com">
+							<i class="fab fa-youtube"></i>
+						</a>
+					</div>
+					<div class="insta">
+						<a href="www.instagram.com">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="./js/data-set.js"></script>
+	<script src="./js/mentor-detail.js"></script>
+	<script src="./js/script.js"></script>
+</body>
+</html>

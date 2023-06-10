@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.3s ease-in-out;
+}
+
+
+/* ===== Colours ===== */
+:root{
+    --pri-color: #fef540;
+    --six-color: #f0b14c;
+    --fif-color: #7ce1ff;
+    --sec-color: #6e90fa;
+    --thi-color: #fc4591;
+    --fou-color: #c050b8;
+    --eig-color: #ffffff;
+    --eig-hover: #e7e7e7;
+    --text-color: #323232;
+    
+    --grad-one: linear-gradient(67deg, var(--pri-color), var(--six-color));
+    --grad-two: linear-gradient(85deg, var(--fif-color), var(--sec-color));
+    --grad-tre: linear-gradient(74deg, var(--thi-color), var(--fou-color));
+  
+}
+
+#first_session{
+    width: 100%;
+    height: 30rem;
+    position: relative;
+}
+
+.overlay{
+    display: none;
+}
+
+@media (max-width: 990px) {
+    #first_session{
+        position: relative;
+    }
+
+    #image{
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+
+    #first_sec #content{
+        width: 100%;
+        position: absolute;
+        z-index: 100;
+        height: 100%;
+    }
+
+    #content h2, #content p{
+        color: var(--eig-color);
+    }
+
+    .overlay{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: #32323283;
+        position: absolute;
+        z-index: 1;
+    }
+}

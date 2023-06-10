@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+    
+        .navbar{
+            width: 100%;
+            height: 50px;
+            border: 1px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 10px;
+            margin: 0;
+        }
+    
+        .navbar-inner{
+            width: 100%;
+            height: 100%;
+            border: 1px solid;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: red;
+            /* padding: 0px 10px; */
+            position: relative;
+        }
+    
+        .menu{
+            display: flex;
+            align-items: center;
+        }
+    
+        .nav-menu{
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+            padding: 0px 15px;
+        }
+    
+        .nav-item{
+            cursor: pointer;
+        }
+    
+        .search{
+            width: auto;
+            right: 0px;
+            height: 80%;
+            position: absolute;
+            display: flex;
+            gap: 10px;
+            /* padding-left: 10px; */
+        }
+    
+        .search_box{
+            width: 0;
+            padding: 0px 10px;
+            border: none;
+            transition: 0.3s ease-in-out;
+        }
+    
+        .Box_expand{
+            width: 100%;
+            flex-grow: 1;
+            border-bottom: 1px solid;
+        }
+    
+        .expand{
+            width: 100%;
+        }
+    
+        .hide{
+            width: 50px;
+        }
+    
+    
+        @media (max-width: 600px) {
+            .search{
+                right: 50px;
+            }
+    
+            .nav-item{
+                width: 100%;
+                line-height: 40px;
+                border: 1px solid;
+                background-color: red;
+            }
+    
+            .menu{
+                position: absolute;
+                top: 100%;
+                width: 100%;
+                border: 1px solid;
+                height: 0px;
+                overflow: hidden;
+                transition: 0.3s ease-in-out; 
+            }
+    
+            .show{
+                height: 140px;
+            }
+    
+            .nav-menu{
+                height: 100%;
+                padding: 0;
+                width: 100%;
+                gap: 5px;
+                flex-direction: column;
+                justify-content: flex-start;
+            }
+        }
+    
+    </style>
+    <body>
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="logo">
+                    Logo
+                </div>
+                <div class="menu">
+                    <ul class="nav-menu">
+                        <li class="nav-item">Home</li>
+                        <li class="nav-item">About</li>
+                        <li class="nav-item">Contact</li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <input type="text" class="search_box" placeholder="Search Here...">
+                    <button class="search_button">Search</button>
+                </div>
+                <div class="hide">
+                    <button class="toggle_button">Hide</button>
+                </div>
+    
+            </div>
+        </div>
+    
+    
+        <script>
+            let searchBtn = document.querySelector('.search_button'),
+            toggle_button = document.querySelector('.toggle_button'),
+            nav = document.querySelector('.menu'),
+            nav_menu = document.querySelector('.nav-menu'),
+            search_box = document.querySelector('.search_box'),
+            search = document.querySelector('.search')
+    
+            searchBtn.addEventListener('click', ()=>{
+                search_box.classList.toggle('Box_expand')
+                nav_menu.classList.toggle('hide')
+                search.classList.toggle('expand')
+            })
+    
+            toggle_button.addEventListener('click', ()=>{
+                nav.classList.toggle('show')
+            })
+    
+        </script>
+    </body>
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+.profile{
+	/*background-color: black;*/
+	padding: 30px 20px;
+	text-align: center;
+	margin: 30px 70px 0 70px;
+	border-radius: 10px;
+}
+
+.profile img{
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	display: inline-block;
+	margin-bottom: 25px;
+}
+
+.text-justify{
+	text-align: justify;
+    padding-bottom: 20px;
+}
+
+.info{
+    border-bottom: 1px solid grey;
+}
+
+.review{
+
+	padding-left: 30px;
+    border-bottom: 1px solid grey;
+}
+
+.vl {
+  border-left: 1px solid grey;
+  height: 70px;
+  position: absolute;
+  left: 20%; 
+  margin-top: -100px; 
+}
+
+.reviewBtn{
+	width: 200px;
+	height: 40px;
+}
